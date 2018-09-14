@@ -1,0 +1,54 @@
+<ion-footer>
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <img alt="logo" height="40" src="assets/imgs/minilogo.png">
+    </ion-title>
+  </ion-navbar>
+</ion-footer>
+
+<div [@showHello]="card_clicked" class="per firstper"><button ion-button round color="light">{{red_per}}%</button></div>
+<div [@showHello]="card_clicked" class="per secondper"><button ion-button round color="light">{{blue_per}}%</button></div>
+
+
+<h1 class="check-red" *ngIf="red_clicked"><ion-icon name="checkmark-circle"></ion-icon></h1>
+<h1 class="check-blue" *ngIf="blue_clicked"><ion-icon name="checkmark-circle"></ion-icon></h1>
+
+
+<ion-content padding text-center class="vertical-align-content">
+
+  <ion-grid>
+
+    <ion-row [class]="'row red ' + bg_class_red" (click)="handleRed()">
+      <ion-col class="animated pulse infinite">
+
+        <h4 *ngIf="!spinners_status" padding no-margin>{{red_text}}</h4>
+        <ion-spinner *ngIf="spinners_status"></ion-spinner>
+      </ion-col>
+    </ion-row>
+
+
+    <div class="next-btn">
+
+      <h5 *ngIf="!card_clicked" padding >و إلا ...</h5>
+      <button *ngIf="card_clicked" (click)="nextquestion()" ion-button round full color="primary">
+        سؤال آخر
+        &nbsp;&nbsp;
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+
+    </div>
+
+
+    <ion-row [class]="'row blue ' + bg_class_blue" (click)="handleBlue()">
+      <ion-col class="animated pulse infinite">
+
+        <h4 *ngIf="!spinners_status" padding no-margin>{{blue_text}}</h4>
+        <ion-spinner *ngIf="spinners_status"></ion-spinner>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

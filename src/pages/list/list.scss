@@ -1,0 +1,99 @@
+page-list {
+
+  *{
+    color: white;
+  }
+
+  p{
+    font-family: 'Tajawal' !important;
+  }
+
+  .next-btn{
+    height: 50px;
+  }
+
+  h5{
+    padding: 12px;
+    font-family: 'Tajawal' !important;
+    color: white;
+    direction: rtl;
+  }
+
+  button{
+    color: white;
+    direction: rtl;
+    top: 2px;
+    font-family: 'Tajawal' !important;
+  }
+
+  .per{
+    font-family: 'Tajawal' !important;
+    color: white;
+    direction: rtl;
+    z-index: 9999;
+  }
+
+
+
+  h4{
+    font-family: 'Tajawal' !important;
+    color: white;
+    direction: rtl;
+  }
+
+  .firstper{
+    color: white;
+    position: absolute;
+    bottom: 85%;
+    right: 15vw;
+    z-index: 999;
+  }
+
+
+  .secondper{
+
+    color: white;
+    position: absolute;
+    top: 51%;
+    right: 15vw;
+    z-index: 999;
+  }
+
+  ion-content{
+      background-color: #470175 !important;
+    }
+
+
+   .row{
+     height: 35vh;
+   }
+
+    .red {
+      align-items: center;
+      border-radius: 8px;
+    }
+
+    .blue {
+      align-items: center;
+      border-radius: 8px;
+    }
+
+
+    .vertical-align-content > *
+    {
+         display: flex !important;
+         align-content: center !important;
+         align-items: center !important;
+    }
+
+
+
+    #ademimg{
+      border-radius: 50%;
+    }
+
+    h4{
+      direction: ltr;
+    }
+
+}
